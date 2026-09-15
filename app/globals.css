@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  scrollbar-color: #b9c2ba transparent;
+}
+
+body {
+  background-color: #F4F6F4;
+  color: #1C2B27;
+}
+
+/* visible keyboard focus everywhere */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #43604F;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* hand-drawn-ish dashed connector used on the home timeline */
+.waypath-line {
+  stroke-dasharray: 1 9;
+  stroke-linecap: round;
+}
+
+/* textarea autosize helper */
+.field {
+  background: #FBFCFA;
+  border: 1px solid #DAD9D0;
+}
+.field:focus {
+  border-color: #43604F;
+}
