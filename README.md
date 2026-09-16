@@ -9,8 +9,17 @@ browser's `localStorage` — there is no backend or database.
 
 - `/` — landing page
 - `/reflect` — journaling prompts with an energy check-in and saved entries
+- `/decide` — a structured decision aid: what you can/can't control, the
+  realistic worst case, a contingency plan, and one action for the week
 - `/goals` — drag-and-drop Kanban board (Someday → This month → This week → Done)
 - `/resources` — practical notes grouped by category
+
+## Architecture
+
+Reflect → understand what you're thinking and feeling
+Decide → evaluate uncertainty and contingency plans
+Plan → convert decisions into actionable steps
+Resources → supporting information
 
 ## Getting started
 
