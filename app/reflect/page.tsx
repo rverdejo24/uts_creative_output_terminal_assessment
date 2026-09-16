@@ -56,13 +56,8 @@ export default function ReflectPage() {
   }
 
   const dateFormatter = useMemo(
-    () =>
-      new Intl.DateTimeFormat("en-US", {
-        month: "short",
-        day: "numeric",
-        year: entries.length ? undefined : undefined,
-      }),
-    [entries.length]
+    () => new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric"}),
+    []
   );
 
   return (
