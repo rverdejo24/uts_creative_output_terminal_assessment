@@ -86,7 +86,9 @@ export default function ResourcesPage() {
             <ul className="mt-6 space-y-5">
               {FURTHER_READING.map((s) => (
                 <li key={s.citation} className="border-l-2 border-stone pl-4">
-                  <p className="text-sm text-ink">{s.citation}</p>
+                  <a href={s.link} target="_blank" rel="noreferrer" className="hover:text-moss-dark">
+                    <p className="text-sm text-ink">{s.citation}</p>
+                  </a>
                   <p className="mt-1 text-sm leading-relaxed text-inkfaint">
                     {s.note}
                   </p>

@@ -27,6 +27,7 @@ export type ResourceCategory = {
 export type SourceItem = {
   citation: string;
   note: string;
+  link?: string;
 };
 
 export const FURTHER_READING: SourceItem[] = [
@@ -35,17 +36,20 @@ export const FURTHER_READING: SourceItem[] = [
       "Paul, K. I., & Moser, K. (2009). Unemployment impairs mental health: Meta-analyses. Journal of Vocational Behavior, 74(3), 264–282.",
     note:
       "A meta-analysis on how unemployment affects psychological wellbeing — background for why this site treats the emotional side of a transition as seriously as the practical side.",
+    link: "https://www.sciencedirect.com/science/article/abs/pii/S0001879109000037?via%3Dihub",
   },
   {
     citation: "Wilkes et al. — see the project proposal for the full citation.",
     note:
       "Cited in the proposal on structure, routine, and coping strategies during unemployment — the basis for the 'staying steady day to day' suggestions. Left as a placeholder here since the exact reference wasn't available while building the site.",
+    link: "https://link.springer.com/article/10.1007/s11469-022-00764-7",
   },
   {
     citation:
       "Savickas, M. L., & Porfeli, E. J. (2012). Career Adapt-Abilities Scale: Construction, reliability, and measurement equivalence across 13 countries. Journal of Vocational Behavior, 80(3), 661–673.",
     note:
       "Work on career adaptability as a set of learnable responses to change, rather than a fixed trait — the underlying idea behind treating this as a skill you build, not a test you pass or fail.",
+    link: "https://www.sciencedirect.com/science/article/abs/pii/S0001879112000139?via%3Dihub",
   },
 ];
 
