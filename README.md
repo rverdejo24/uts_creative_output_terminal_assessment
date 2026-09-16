@@ -31,7 +31,4 @@ Then open http://localhost:3000.
 ## Notes for extending it
 
 - Design tokens (colors, fonts) live in `tailwind.config.ts`.
-- Reflection prompts and resource content live in `lib/data.ts` — edit
-  that file to change the copy without touching any components.
-- Swap `localStorage` for a real backend by replacing the two functions
-  in `lib/storage.ts`; every page already calls through that module.
+- Reflection prompts and resource content live in `lib/data.ts`
