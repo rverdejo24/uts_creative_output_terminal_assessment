@@ -14,4 +14,16 @@ export type GoalCard = {
   note?: string;
   column: ColumnId;
   createdAt: string;
+  completedAt?: string;
 };
+
+export type DecisionEntry = {
+  id: string;
+  decision: string;
+  canControl: string;
+  cannotControl: string;
+  worstCase: string;
+  contingency: string;
+  thisWeekAction: string;
+  createdAt: string;
+}

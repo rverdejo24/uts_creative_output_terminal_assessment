@@ -1,4 +1,4 @@
-import { RESOURCE_CATEGORIES } from "@/lib/data";
+import { RESOURCE_CATEGORIES, FURTHER_READING } from "@/lib/data";
 
 export default function ResourcesPage() {
   return (
@@ -30,6 +30,14 @@ export default function ResourcesPage() {
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href="#sources"
+                className="text-sm text-inkfaint hover:text-moss-dark"
+              >
+                Sources
+              </a>
+            </li>
           </ul>
         </nav>
 
@@ -66,6 +74,26 @@ export default function ResourcesPage() {
               </ul>
             </section>
           ))}
+
+          <section id="sources" className="scroll-mt-24">
+            <h2 className="font-serif text-xl text-ink">
+              Sources &amp; further reading
+            </h2>
+            <p className="mt-2 max-w-prose text-sm leading-relaxed text-inkfaint">
+              The reframes on this page draw on research about unemployment,
+              wellbeing, and career adaptability, not just general advice.
+            </p>
+            <ul className="mt-6 space-y-5">
+              {FURTHER_READING.map((s) => (
+                <li key={s.citation} className="border-l-2 border-stone pl-4">
+                  <p className="text-sm text-ink">{s.citation}</p>
+                  <p className="mt-1 text-sm leading-relaxed text-inkfaint">
+                    {s.note}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </section>
         </div>
       </div>
     </div>

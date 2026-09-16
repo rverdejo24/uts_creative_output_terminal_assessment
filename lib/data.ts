@@ -24,6 +24,31 @@ export type ResourceCategory = {
   items: ResourceItem[];
 };
 
+export type SourceItem = {
+  citation: string;
+  note: string;
+};
+
+export const FURTHER_READING: SourceItem[] = [
+  {
+    citation:
+      "Paul, K. I., & Moser, K. (2009). Unemployment impairs mental health: Meta-analyses. Journal of Vocational Behavior, 74(3), 264–282.",
+    note:
+      "A meta-analysis on how unemployment affects psychological wellbeing — background for why this site treats the emotional side of a transition as seriously as the practical side.",
+  },
+  {
+    citation: "Wilkes et al. — see the project proposal for the full citation.",
+    note:
+      "Cited in the proposal on structure, routine, and coping strategies during unemployment — the basis for the 'staying steady day to day' suggestions. Left as a placeholder here since the exact reference wasn't available while building the site.",
+  },
+  {
+    citation:
+      "Savickas, M. L., & Porfeli, E. J. (2012). Career Adapt-Abilities Scale: Construction, reliability, and measurement equivalence across 13 countries. Journal of Vocational Behavior, 80(3), 661–673.",
+    note:
+      "Work on career adaptability as a set of learnable responses to change, rather than a fixed trait — the underlying idea behind treating this as a skill you build, not a test you pass or fail.",
+  },
+];
+
 export const RESOURCE_CATEGORIES: ResourceCategory[] = [
   {
     id: "moving",
@@ -85,9 +110,9 @@ export const RESOURCE_CATEGORIES: ResourceCategory[] = [
       "Practical groundwork that's easy to put off but genuinely reduces stress once it's done.",
     items: [
       {
-        title: "Check unemployment benefit eligibility early",
+        title: "Check what income support you're eligible for",
         description:
-          "Rules and processing times vary a lot by location — applying promptly matters even if you expect to find something quickly.",
+          "Unemployment insurance, SSS unemployment benefits, or the local equivalent — rules and processing times vary a lot by country, so apply promptly even if you expect to find something quickly.",
       },
       {
         title: "List fixed vs. flexible expenses",
@@ -95,9 +120,9 @@ export const RESOURCE_CATEGORIES: ResourceCategory[] = [
           "Knowing your real monthly floor makes it easier to judge how much runway you actually have, and takes some of the guesswork-driven anxiety out of the picture.",
       },
       {
-        title: "Ask about COBRA or marketplace coverage timelines",
+        title: "Review your health coverage after leaving employment",
         description:
-          "Health coverage gaps are one of the more stressful logistics to leave until the last minute — worth confirming deadlines early.",
+          "Check when your employer-provided coverage ends and what alternative coverage — private insurance, a national health program, or a spouse's plan — is available where you live.",
       },
     ],
   },
